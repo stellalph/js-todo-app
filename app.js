@@ -7,7 +7,8 @@
 // 4. When delete is clicked, the item is deleted
 // add a delete button
 // delete button on click, should remove the item
-//   add EventListener
+//   add an eventListener
+//   delete the parent
 // 5. After Item is added, clear the text field
 // 6. Auto focus after add.
 // 7. Enable Enter-to-submit functionality
@@ -21,6 +22,8 @@ addButton.addEventListener('click', function () {
     console.log('I was clicked', itemToAdd.value);
     const newItem = createItem(itemToAdd.value)
     ul.appendChild(newItem);
+    itemToAdd.value = '';
+    itemToAdd.focus()
 });
 
 function createItem(val) {
