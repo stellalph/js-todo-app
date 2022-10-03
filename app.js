@@ -25,8 +25,7 @@ app.addEventListener('click', function(event){
    
 })
 body.addEventListener('click', function(event){
- alert('Body was clicked');
-   
+    ul.innerHTML = '';  
 })
 
 
