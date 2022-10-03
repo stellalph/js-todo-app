@@ -17,6 +17,17 @@ const form = document.querySelector('form.add');
 const addButton = document.querySelector('#addButton');
 const itemToAdd = document.querySelector('#itemToAdd');
 const ul = document.querySelector('.todo');
+const body = document.querySelector('body');
+const app = document.querySelector('.app');
+
+app.addEventListener('click', function(event){
+    event.stopPropagation();
+   
+})
+body.addEventListener('click', function(event){
+ alert('Body was clicked');
+   
+})
 
 
 form.addEventListener('submit', function(event){
