@@ -53,6 +53,8 @@
     border-radius: 5px;
     border: 1px solid #CCC;
     padding: 5px;
+    margin-bottom: 10px;
+   
   }
   
   form.add input[type="submit"]{
