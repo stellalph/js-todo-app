@@ -21,10 +21,14 @@ const ul = document.querySelector('.todo');
 
 form.addEventListener('submit', function(event){
     event.preventDefault();
-    const newItem = createItem(itemToAdd.value)
-    ul.appendChild(newItem);
-    itemToAdd.value = '';
-    itemToAdd.focus()
+    if(itemToAdd.value){
+        const newItem = createItem(itemToAdd.value);
+        ul.appendChild(newItem);
+        itemToAdd.value = '';
+        itemToAdd.focus()
+    }
+   
+  
 });
 
 function createItem(val) {
