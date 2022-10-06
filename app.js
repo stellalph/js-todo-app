@@ -13,7 +13,8 @@
 // 6. Auto focus after add.
 // 7. Enable Enter-to-submit functionality
 
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded',init);
+function init(){
     const form = document.querySelector('form.add');
     const addButton = document.querySelector('#addButton');
     const itemToAdd = document.querySelector('#itemToAdd');
@@ -60,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function(){
     
         return item;
     }
-})
+}
 
 
 
